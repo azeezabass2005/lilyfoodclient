@@ -7,7 +7,7 @@ const Hero = () => {
     <div className='hero min-h-[100vh]'>
         <div className='hero-gradient min-h-[100vh] flex md:flex-row flex-col justify-center items-center sm:px-20 vs:px-5 xs:px-8 ss:px-14 px-3 pt-20 ss:pt-24 md:px-20 lg:px-32 border-b-2 border-solid border-[#05814140] pb-2'>
             <div className='flex-1 md:min-w-[40vw] xl:min-w-[43vw]'>
-                <h2 className='sm:text-[2.7rem] text-[2.4rem] text-[#058141] font-semibold sm:leading-[65px] lg:mt-10 xl:text-[3.8rem] xl:leading-[82px] large-text'>
+                <h2 className='sm:text-[2.7rem] text-[2.1rem] text-[#058141] font-semibold sm:leading-[65px] lg:mt-10 xl:text-[3.8rem] xl:leading-[82px] large-text'>
                     Your Number One Choice For African
                     Indigenious Dishes in Raw Form.
                 </h2>
