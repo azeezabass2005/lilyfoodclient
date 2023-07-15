@@ -14,11 +14,7 @@ html {
 }
 
 :root {
-
-}
-
-body {
-
+  --SECONDARY-COLOR: #0f9f55;
 }
 
 .hero {
@@ -30,16 +26,16 @@ body {
 /* background-image: url('./assets/bgone.png');*/
 
 .hero-gradient {
-  background-image: linear-gradient(185deg, #00ff0030, #00ff0030, #aaffaa20, #00ff0030, #00ff0030);
+  background-image: linear-gradient(185deg, #1cd77724, #1cd77724, #ddffdd14, #1cd77724, #1cd77724);
 }
 
 .large-text {
-  text-shadow: 2px 2px 3px #1cd777;
+  text-shadow: .33px .2px 1px #1cd777;
 }
 
 .gradient-white {
   background-image: linear-gradient(180deg, #fff, #1cd777, #ffffff);
-  filter: blur(15px);
+  filter: blur(16px);
   box-shadow: 5px 5px 30px 10px #555;
 }
 
@@ -49,19 +45,19 @@ button {
 }
 
 button:hover {
-  border-color: #058141;
-  filter: drop-shadow(0em 0em 2em #00ff0090);
+  border-color: var(--SECONDARY-COLOR);
+  filter: drop-shadow(0em 0em 2em #0f9f5580);
 }
 
 .active {
-  background-color: #058141;
+  background-color: var(--SECONDARY-COLOR);
   scale: 1.1;
 }
 
 @media screen and (min-width:1060px) {
   .active {
     background-color: transparent;
-    color: #058141;
+    color: var(--SECONDARY-COLOR);
     font-weight: bold;
   }
 }

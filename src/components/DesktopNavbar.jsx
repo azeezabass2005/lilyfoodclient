@@ -40,7 +40,7 @@ const DesktopNavbar = () => {
       <div className='bg-[#fff] h-[85px] xl:h-[95px] w-[93vw] xl:w-[90vw] rounded-[15px] mt-[-40px] flex items-center justify-around px-4'>
         <Link to={'/'} className={`flex justify-center items-center`}>
             <Logo />
-            <h1 className='vs:text-[30px] text-[28px] uppercase font-bold font-poppins ml-2 text-[#058141]'>
+            <h1 className='vs:text-[30px] text-[28px] uppercase font-bold font-poppins ml-2 text-[var(--SECONDARY-COLOR)]'>
                 Lily food
             </h1>
         </Link>
@@ -48,16 +48,16 @@ const DesktopNavbar = () => {
           {navLinks.map((link, index) => (
             <NavLink to={link.path} key={link.name} className={`font-semibold text-[#343] xl:text-[20px]`}>
               {index > 2 ?
-              <FontAwesomeIcon icon={link.icon} className={`text-[#058141] h-[23px] w-[23px] xl:h-[30px] xl:w-[30px] `} /> :
+              <FontAwesomeIcon icon={link.icon} className={`text-[var(--SECONDARY-COLOR)] h-[23px] w-[23px] xl:h-[30px] xl:w-[30px] `} /> :
               <p className='uppercase'>{link.name}</p>
               }
             </NavLink>
           ))}
         </div>
-        {/* <button className='px-8 p-3 text-[#fff] text-[1rem] font-semibold rounded-[5px] bg-[#058141] font-poppins'><a href="/">Sign Up</a></button> */}
-        <div className={`bg-[#fff] border-[2px] border-solid border-[#058141] rounded-[10px] flex h-[45px] w-[21vw] xl:w-[20vw] justify-between items-center`}>
-          <input type="search" name="productSearch" id="productSearch" placeholder='Search' className='p-2 rounded-[10px] outline-none text-[#058141] w-[85%]' />
-          <div className='bg-[#058141] rounded-r-[8px] h-[45px] w-[50px] flex justify-center items-center'>
+        {/* <button className='px-8 p-3 text-[#fff] text-[1rem] font-semibold rounded-[5px] bg-[var(--SECONDARY-COLOR)] font-poppins'><a href="/">Sign Up</a></button> */}
+        <div className={`bg-[#fff] border-[2px] border-solid border-[var(--SECONDARY-COLOR)] rounded-[10px] flex h-[45px] w-[21vw] xl:w-[20vw] justify-between items-center`}>
+          <input type="search" name="productSearch" id="productSearch" placeholder='Search' className='p-2 rounded-[10px] outline-none text-[var(--SECONDARY-COLOR)] w-[85%]' />
+          <div className='bg-[var(--SECONDARY-COLOR)] rounded-r-[8px] h-[45px] w-[50px] flex justify-center items-center'>
             <FontAwesomeIcon icon={faSearch} className=' text-[#fff] h-[20px] w-[20px]' />
           </div>
         </div>

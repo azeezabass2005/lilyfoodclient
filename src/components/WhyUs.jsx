@@ -2,13 +2,13 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import { features } from '../constants'
-import { grocerybasket, deliveryillustration, timelydelivery, qualityillustration } from '../assets'
+import { grocerybasket, deliveryillustration, qualityillustration } from '../assets'
 
 const WhyUs = () => {
   return (
     <div className='hero-gradient flex md:flex-row-reverse flex-col justify-center items-center sm:px-20 vs:px-5 xs:px-8 ss:px-14 px-3 md:px-20 lg:px-32 pt-10 pb-5'>
         <div className='md:w-[55vw] md:px-[2vw]'>
-            <h2  className='sm:text-[2.7rem] text-[2.4rem] text-[#058141] font-semibold sm:leading-[65px] lg:mt-10 xl:text-[3.8rem] xl:leading-[82px] large-text'>
+            <h2  className='sm:text-[2.7rem] vs:text-[1.8rem] text-[1.6rem] text-[var(--SECONDARY-COLOR)] font-semibold sm:leading-[65px] lg:mt-10 xl:text-[3.8rem] xl:leading-[82px] large-text'>
                 Why Should You Choose Us?
             </h2>
             <div className=''>
@@ -18,7 +18,7 @@ const WhyUs = () => {
                             <FontAwesomeIcon icon={faCheck} className='h-[20px] w-[25px] bg-[#15bb66] text-[#fff] rounded-full' />
                         </div>
                         <div>
-                            <h3 className='sm:text-[1.7rem] text-[1.4rem] text-[#058141] font-semibold xl:text-[3rem]'>{feature.name}</h3>
+                            <h3 className='sm:text-[1.7rem] text-[1.2rem] text-[var(--SECONDARY-COLOR)] font-semibold xl:text-[3rem]'>{feature.name}</h3>
                             <p className='text-[16px] xs:text-[18px] ss:text-[20px] sm:text-[22px] text-[#010] xl:text-[28px]'>{feature.description}</p>
                         </div>
                     </div>

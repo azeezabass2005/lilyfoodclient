@@ -1,6 +1,3 @@
-import bgone from './bgone.png'
-import bgthree from './bgthree.png'
-import bgtwo from './bgtwo.png'
 import deliveryillustration from './deliveryillustration.png'
 import deliverymodel from './deliverymodel.png'
 import modelone from './modelone.png'
@@ -12,9 +9,6 @@ import whatsapplogo from './whatsapplogo.svg'
 import grocerybasket from './grocerybasket.png'
 
 export {
-    bgone,
-    bgthree,
-    bgtwo,
     deliveryillustration,
     deliverymodel,
     modelone,

@@ -14,39 +14,39 @@ const TabletNavbar = () => {
 
   return (
     <div className='fixed h-[100px] z-[100]'>
-        <motion.div whileInView={{x:[100, 0]}} className={` h-[80px] bg-[#ffffff90] backdrop-blur-xl  w-[100vw] shadow-[#058141] shadow-md p-3 flex items-center vs:justify-around justify-between`}>
+        <motion.div whileInView={{x:[100, 0]}} className={` h-[80px] bg-[#ffffff90] backdrop-blur-xl  w-[100vw] shadow-[var(--SECONDARY-COLOR)] shadow-md p-3 flex items-center vs:justify-around justify-between`}>
             <Link to={'/'} className={`flex justify-center items-center`}>
                 <Logo />
-                <h1 className='vs:text-[30px] text-[28px] uppercase font-bold font-poppins ml-2 text-[#058141]'>
+                <h1 className='vs:text-[30px] text-[28px] uppercase font-bold font-poppins ml-2 text-[var(--SECONDARY-COLOR)]'>
                     Lily food
                 </h1>
             </Link>
             <div className='flex justify-center items-center'>
-                <FontAwesomeIcon icon={faSearch} className='text-[#058141] h-[27px] sm:h-[30px] sm:w-[30px] w-[27px]' />
+                <FontAwesomeIcon icon={faSearch} className='text-[var(--SECONDARY-COLOR)] h-[27px] sm:h-[30px] sm:w-[30px] w-[27px]' />
             </div>
             <Link to={'/cart'} className='flex justify-center items-center'>
-                <FontAwesomeIcon icon={faShoppingCart} className='text-[#058141] h-[27px] sm:h-[30px] sm:w-[30px] w-[27px]' />
+                <FontAwesomeIcon icon={faShoppingCart} className='text-[var(--SECONDARY-COLOR)] h-[27px] sm:h-[30px] sm:w-[30px] w-[27px]' />
                 <div className='h-[18px] w-[18px] rounded-full bg-[#9e0707] flex justify-center items-center text-[10px] font-semibold text-[#fff] border-solid border-[1px] border-[#fff] ml-[-9px] mt-[-16px]'>
                   1
                 </div>
             </Link>
             <Link to={'/favorite'} className='flex justify-center items-center'>
-                <FontAwesomeIcon icon={faHeart} className='text-[#058141] h-[27px] sm:h-[30px] sm:w-[30px] w-[27px]' />
+                <FontAwesomeIcon icon={faHeart} className='text-[var(--SECONDARY-COLOR)] h-[27px] sm:h-[30px] sm:w-[30px] w-[27px]' />
             </Link>
             <div className='flex justify-center items-center'>
-                <FontAwesomeIcon icon={faUser} className='text-[#058141] h-[27px] sm:h-[30px] sm:w-[30px] w-[27px]' />
+                <FontAwesomeIcon icon={faUser} className='text-[var(--SECONDARY-COLOR)] h-[27px] sm:h-[30px] sm:w-[30px] w-[27px]' />
             </div>
             <div>
-                <FontAwesomeIcon icon={toggle ? faClose : faHamburger} className='text-[#058141] h-[27px] w-[27px]'  onClick={() => setToggle((prev) => (!prev))} />
+                <FontAwesomeIcon icon={toggle ? faClose : faHamburger} className='text-[var(--SECONDARY-COLOR)] h-[27px] w-[27px]'  onClick={() => setToggle((prev) => (!prev))} />
                 <motion.div whileInView={{ x:[120, 0] }} className={` ${toggle ? 'flex' : 'hidden'} flex flex-col absolute top-[80px] w-[90vw] side-nav-tab right-0 bg-[#15bb66] justify-around`}>
                     <div className='flex justify-center'>
-                        <a href='tel:+971524506575' onClick={() => setToggle((prev) => (!prev))} className='flex text-[#058141] bg-[#fff] w-[40%] p-2 m-2 rounded-[5px] justify-center items-center'>
+                        <a href='tel:+971524506575' onClick={() => setToggle((prev) => (!prev))} className='flex text-[var(--SECONDARY-COLOR)] bg-[#fff] w-[40%] p-2 m-2 rounded-[5px] justify-center items-center'>
                             <FontAwesomeIcon icon={faPhone} className={`h-[24px] w-[24px] vs:h-[28px] vs:w-[28px]`} />
                             <p className='font-bold vs:text-[22px] text-[19px] ml-2'>
                                 Call Us
                             </p>
                         </a>
-                        <a href='mailto:lilyfood@gmail.com' onClick={() => setToggle((prev) => (!prev))} className='flex text-[#058141] bg-[#fff] w-[40%] p-2 m-2 rounded-[5px] justify-center items-center'>
+                        <a href='mailto:lilyfood@gmail.com' onClick={() => setToggle((prev) => (!prev))} className='flex text-[var(--SECONDARY-COLOR)] bg-[#fff] w-[40%] p-2 m-2 rounded-[5px] justify-center items-center'>
                             <FontAwesomeIcon icon={faEnvelope} className={`h-[24px] w-[24px] vs:h-[28px] vs:w-[28px]`} />
                             <p className='font-bold vs:text-[22px] text-[19px] ml-2'>
                                 Mail Us
