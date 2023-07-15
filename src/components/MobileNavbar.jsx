@@ -38,7 +38,7 @@ const MobileNavbar = () => {
 
   return (
     <div className='fixed h-[70px] z-[100] w-[100vw]'>
-        <motion.div whileInView={{x:[100, 0]}} className={` h-[70px] bg-[#ffffff80] backdrop-blur-xl  w-[100vw] shadow-[var(--SECONDARY-COLOR)] shadow-sm p-3 flex items-center vs:justify-around justify-between ${topNavShow ? 'flex' : 'hidden'}`}>
+        <motion.div whileInView={{x:[100, 0]}} className={` h-[70px] bg-[#ffffff30] backdrop-blur-[80px]  w-[100vw] shadow-[var(--SECONDARY-COLOR)] shadow-sm p-3 flex items-center vs:justify-around justify-between ${topNavShow ? 'flex' : 'hidden'}`}>
             <Link path={'/'} className={`flex justify-center items-center`}>
                 <Logo />
                 <h1 className='vs:text-[30px] text-[28px] uppercase font-bold font-poppins ml-2 text-[var(--SECONDARY-COLOR)]'>

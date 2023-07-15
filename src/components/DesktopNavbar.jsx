@@ -56,7 +56,7 @@ const DesktopNavbar = () => {
         </div>
         {/* <button className='px-8 p-3 text-[#fff] text-[1rem] font-semibold rounded-[5px] bg-[var(--SECONDARY-COLOR)] font-poppins'><a href="/">Sign Up</a></button> */}
         <div className={`bg-[#fff] border-[2px] border-solid border-[var(--SECONDARY-COLOR)] rounded-[10px] flex h-[45px] w-[21vw] xl:w-[20vw] justify-between items-center`}>
-          <input type="search" name="productSearch" id="productSearch" placeholder='Search' className='p-2 rounded-[10px] outline-none text-[var(--SECONDARY-COLOR)] w-[85%]' />
+          <input type="search" name="productSearch" id="productSearch" placeholder='Search' className='p-2 rounded-[10px] outline-none text-[#002200] w-[85%]' />
           <div className='bg-[var(--SECONDARY-COLOR)] rounded-r-[8px] h-[45px] w-[50px] flex justify-center items-center'>
             <FontAwesomeIcon icon={faSearch} className=' text-[#fff] h-[20px] w-[20px]' />
           </div>

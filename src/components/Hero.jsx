@@ -15,17 +15,14 @@ const Hero = () => {
                     of African soup Recipes at unimaginable prices, 
                     to satisfy your cravings for local dishes.
                 </p>
-                <div className='flex flex-wrap sm:gap-[2rem] gap-[1rem] vs:mt-7 mt-3 vs:mb-12 mb-8'>
+                <div className='flex flex-wrap sm:gap-[.5rem] vs:mt-7 mt-3 vs:mb-12 mb-8'>
                     <button className=' sm:p-5 sm:px-9 vs:px-7 px-5 vs:p-4 p-3 text-[#fff] vs:text-[1.3rem] text-[1rem] vs:rounded-[20px] rounded-[12px] bg-[#024925] font-semibold'><a href="/">Order Now</a></button>
-                    <button className=' sm:p-5 sm:px-9 vs:px-7 px-5 vs:p-4 p-2 bg-[#f4fff9] border-dotted border-[2px] border-[#024925] font-semibold vs:text-[1.3rem] text-[1rem] vs:rounded-[20px] rounded-[12px] text-[#024925]'><a href="/">Meet Us</a></button>
+                    <button className=' sm:p-5 sm:px-9 vs:px-7 px-5 vs:p-4 p-2 bg-[#f4fff9] border-dotted border-[2px] border-[#024925] font-semibold vs:text-[1.3rem] text-[1rem] vs:rounded-[20px] rounded-[12px] text-[#024925] ml-5'><a href="/">Meet Us</a></button>
                 </div>
             </div>
             <div className='relative xs:mt-0 vs:mt-2 mt-1'>
                 <div className='vs:h-[95%] vs:w-[95%] h-[230px] w-[230px] rounded-full gradient-white absolute z-[1] right-0' />
                 <img src={modelone} alt="model" className={`z-[2] relative`}/>
-                {/* <div className='flex justify-center items-center px-2 rounded-[8px] bg-[#1cd777] allroundshadow z-[3] absolute top-[5%] left-[8%]' >
-                    <img src={timelydelivery} alt="delivery" className={`vs:h-[90px] vs:w-[90px] h-[70px] w-[70px]`} />
-                </div> */}
             </div>
         </div>
     </div>
